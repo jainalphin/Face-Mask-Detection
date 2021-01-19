@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>Facial Emotion Detection</title>
+	
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="File Upload widget Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<script type="text/javascript" src="static/js/filedrag.js"></script>
+<style>
+body{
+  background: rgba(0,0,0,0.9);
+}
+.box{
+	margin-left:370px;
+  padding: 12px 20px;
+   width: 50%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px;
+  resize: none;
+}
+
+}
+</style>	
+
+</head>
+<body>
+	<center><h1 style="color:white; padding-top:10px;">Face Mask Detection</h1></center>
+			<div class ="box"><center>
+			
+			<h2 style="margin-top: 100px;"><a href="{{url_for('detect_image')}}" style="color:white;">Image Mask Detection</a></h2>
+			<h2 style="margin-top: 50px;"><a href="{{url_for('detect_video',page='page')}}" style="color:white;">Detect Mask Detection</a></h2>
+			<h2 style="margin-top: 50px;margin-bottom: 100px"><a href="#" style="color:white">Live Mask Detection (via Camera)</a></h2></center>
+			
+			</div>
+			<div class="footer">
+		<p style="color:white;margin-top:500px; text-align:center;"> Created  By Alphin Jain</a></p>
+	</div>
+	<script type="text/javascript" src="static/js/jquery.min.js"></script>
+	<script>
+   $(document).ready(function(){
+  $('form input').change(function () {
+    $('form p').text(this.files.length + " Image is selected");
+  });
+});
+</script>
+	
+</body>
+</html>

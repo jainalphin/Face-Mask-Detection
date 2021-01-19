@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title>Facial Emotion Detection</title>
+	
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="File Upload widget Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<script type="text/javascript" src="static/js/filedrag.js"></script>
+<style>
+body{
+  background: rgba(0,0,0,0.9);
+}
+form{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-top: -130px;
+  margin-left: -250px;
+  width: 500px;
+  height: 300px;
+  border: 4px dashed #fff;
+}
+form p{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 280px;
+  color: #ffffff;
+  font-family: Arial;
+}
+form input{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+}
+form button{
+  margin: 0;
+  color: #fff;
+  background: #16a085;
+  border: none;
+  width: 508px;
+  height: 50px;
+  margin-top: -20px;
+  margin-left: -4px;
+  border-radius: 4px;
+  border-bottom: 4px solid #117A60;
+  transition: all .2s ease;
+  outline: none;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+form button:hover{
+  background: #149174;
+	color: #0C5645;
+	margin-top: -20px;
+	margin-left: -4px;
+	
+}
+form button:active{
+  border:0;
+}
+</style>	
+
+</head>
+<body>
+
+	
+			<h1  style="color:white; padding-top:50px; text-align:center;">Face Mask Detection</h1>
+			<center><h3 style="color:white; padding-top:10px;text-align:center;"><b>WebCam</b></h3></center>	
+			
+			<center><img src="{{url_for('detect_video')}}"><p style="color:white; padding-top:10px;text-align:center;">Please Wait Web Cam is initializing...</p></center>
+			<div class="footer">
+		<p style="color:white;margin-top:500px; text-align:center;"> Created  By Alphin Jain</a></p>
+	</div>
+	<script type="text/javascript" src="static/js/jquery.min.js"></script>
+	<script>
+   $(document).ready(function(){
+  $('form input').change(function () {
+    $('form p').text(this.files.length + " Image is selected");
+  });
+});
+
+</script>
+	
+</body>
+</html>
