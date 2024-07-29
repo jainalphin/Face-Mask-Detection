@@ -33,3 +33,6 @@ I have applied this trained model on :
    2. Face Mask Detection on Video
    3. Face Mask Detection on WebCam 
 
+Links:
+ [Presnetation]([url](https://docs.google.com/presentation/d/1ILqdXf1o2KFGCkYIvN9AytfDcuSH3kmk/edit?usp=sharing&ouid=113685146900593867572&rtpof=true&sd=true&usp=embed_facebook))
+ [Youtube]([url](https://lnkd.in/ePXgXsm))
